@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: black;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    background: black;
+    .left-container{
+        color: white;
+        width: 100px;
+        flex-grow: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form{
+            width:300px;
+            text-align: center;
+            padding: 17px 50px 40px 25px;
+            border: 5px dotted peru;
+            border-radius: 20px;
+            h1{
+                font-family: cursive;
+                color: white;
+            }
+            input{
+                width: 100%;
+                padding: 8px;
+                background: black;
+                border: none;
+                border-bottom: 2px solid orange;
+                color: white;
+                margin-bottom: 15px;
+                outline-style: none;
+                font-size: 16px;
+                font-family: cursive;
+                &:-webkit-autofill, &:focus{
+                    border: 1px solid black;
+                    border-bottom: 2px solid orange;
+                    -webkit-text-fill-color: white;
+                    -webkit-box-shadow: 0 0 0 1000px #000 inset;
+                }
+            }
+            .error-text{
+                margin-bottom: 10px;
+                text-align: left;
+                color: red;
+                font-family: cursive;
+            }
+            //.checkbox{
+            //    display: flex;
+            //    input[type=checkbox]{
+            //        width: 15px;
+            //    }
+            //}
+            button{
+                padding: 15px 50px;
+                background: mediumblue;
+                border: none;
+                color: white;
+                border-radius: 20px;
+                outline-style: none;
+                cursor: pointer;
+                font-size: 16px;
+                font-family: cursive;
+            }
+        }
+    }
+    .right-container{
+        width: 100px;
+        background-image: url("images/something.svg");
+        background-size: auto;
+        flex-grow: 5;
+    }
+}
+
+
+

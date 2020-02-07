@@ -1,0 +1,90 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: black;
+}
+
+.main-container {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: stretch;
+          align-items: stretch;
+  background: black;
+}
+
+.main-container .left-container {
+  color: white;
+  width: 100px;
+  -webkit-box-flex: 5;
+          flex-grow: 5;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.main-container .left-container .form {
+  width: 300px;
+  text-align: center;
+  padding: 17px 50px 40px 25px;
+  border: 5px dotted peru;
+  border-radius: 20px;
+}
+
+.main-container .left-container .form h1 {
+  font-family: cursive;
+  color: white;
+}
+
+.main-container .left-container .form input {
+  width: 100%;
+  padding: 8px;
+  background: black;
+  border: none;
+  border-bottom: 2px solid orange;
+  color: white;
+  margin-bottom: 15px;
+  outline-style: none;
+  font-size: 16px;
+  font-family: cursive;
+}
+
+.main-container .left-container .form input:-webkit-autofill,
+.main-container .left-container .form input:focus {
+  border: 1px solid black;
+  border-bottom: 2px solid orange;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0 1000px #000 inset;
+}
+
+.main-container .left-container .form .error-text {
+  margin-bottom: 10px;
+  text-align: left;
+  color: red;
+  font-family: cursive;
+}
+
+.main-container .left-container .form button {
+  padding: 15px 50px;
+  background: mediumblue;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  outline-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: cursive;
+}
+
+.main-container .right-container {
+  width: 100px;
+  background-image: url(/images/something.svg?8790881e145156823936cbabfa58b793);
+  background-size: auto;
+  -webkit-box-flex: 5;
+          flex-grow: 5;
+}
+

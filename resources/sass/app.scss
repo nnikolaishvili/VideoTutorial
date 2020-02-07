@@ -1,0 +1,42 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom styles
+@import 'custom';
+
+html * {
+    outline: none !important;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background: $body-bg;
+    background-image: url('../images/woman.jpg');
+    background-size: contain;
+}
+
+a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    &:hover{
+        color: darkgrey;
+    }
+}
+
+.bg-dark{
+    background: black !important;
+}
+
+.nav-item {
+    font-size: 16px;
+    line-height: 2;
+}

@@ -20,7 +20,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => ['admin.auth']], function () {
         Route::get('logout', 'AdminController@logout');
         Route::get('articles', 'AdminController@index')->name('admin.articles');
-
-        Route::resource('articles', 'ArticlesController')->only(['show', 'create' , 'store', 'destroy', 'edit', 'update']);
+        Route::get('articles/{article}/delete', 'ArticlesController@destroy');
+        Route::resource('articles', 'ArticlesController')->only(['show', 'create' , 'store', 'edit', 'update']);
     });
 });

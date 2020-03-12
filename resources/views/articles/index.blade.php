@@ -43,6 +43,7 @@
                         <i class="user icon"></i>
                         <a href="{{ url('admin/articles/create') }}" style="color: white">New article</a>
                     </div>
+                    {{ $articles->links() }}
                 </th>
             </tr>
         </tfoot>

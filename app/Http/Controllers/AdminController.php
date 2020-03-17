@@ -35,7 +35,7 @@ class AdminController extends Controller
     public function index()
     {
         return view('articles.index')->with([
-            'articles' => Auth::user()->articles()->latest()->paginate(15)
+            'articles' => Auth::user()->articles()->latest()->paginate(10)
         ]);
     }
 }
